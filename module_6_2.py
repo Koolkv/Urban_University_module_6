@@ -3,7 +3,7 @@ class Vehicle:
     __model = 'mini'
     __engine_power = 184
     __color = 'brown'
-    __COLOR_VARIANTS = ['cosmos', 'black', 'dark blue', ]
+    __COLOR_VARIANTS = ['coSmoS', 'black', 'dark blue', ]
 
     def get_model(self):
         print(f'Модель: {self.__model}')
@@ -45,3 +45,6 @@ car_632.print_info()
 car_632.set_color('black')
 car_632.set_color('coosmoos')
 car_632.get_color()
+car_632.set_color('COSmos')
+car_632.get_color()
+
