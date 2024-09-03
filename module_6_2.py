@@ -1,9 +1,11 @@
 class Vehicle:
-    owner = 'я'
-    __model = 'mini'
-    __engine_power = 184
-    __color = 'brown'
     __COLOR_VARIANTS = ['coSmoS', 'black', 'dark blue', ]
+
+    def __init__(self, owner=str, model=str, engine_power=0, color=str):
+        self.owner = owner
+        self.__model = model
+        self.__engine_power = engine_power
+        self.__color = color
 
     def get_model(self):
         print(f'Модель: {self.__model}')
@@ -37,14 +39,11 @@ class Sedan(Vehicle):
     __PASSENGERS_LIMIT = 5
 
 
-car_632 = Sedan()
-car_632.get_model()
-car_632.get_horsepower()
-car_632.get_color()
+car_632 = Sedan('KoolikovN', 'MINI', 184, 'brown')
 car_632.print_info()
-car_632.set_color('black')
-car_632.set_color('coosmoos')
+car_632.set_color('Cosmos')
 car_632.get_color()
-car_632.set_color('COSmos')
+car_632.set_color('piggy pink')
 car_632.get_color()
-
+car_632.owner = 'Novikov'
+car_632.print_info()
